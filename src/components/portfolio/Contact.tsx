@@ -12,10 +12,10 @@ const Contact = () => (
           <span className="text-foreground/50">worth shipping.</span>
         </h2>
         <a
-          href="mailto:hello@rohanfozdar.com"
+          href="mailto:rohan.fozdar@gmail.com"
           className="display inline-block mt-8 text-2xl md:text-4xl font-semibold tracking-tight underline-offset-8 hover:underline"
         >
-          hello@rohanfozdar.com
+          rohan.fozdar@gmail.com
         </a>
         <div className="mt-10 flex flex-wrap justify-center gap-2">
           {socials.map((s) => (
