@@ -7,9 +7,9 @@ const Contact = () => (
       <div className="glass-strong rounded-3xl p-8 md:p-14 text-center">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-foreground/50 mb-4">Contact</p>
         <h2 className="display text-4xl md:text-6xl font-bold tracking-tight">
-          Let's make something
+          If you need help shipping
           <br />
-          <span className="text-foreground/50">worth shipping.</span>
+          <span className="text-foreground/50">Let's Talk!</span>
         </h2>
         <a
           href="mailto:rohan.fozdar@gmail.com"

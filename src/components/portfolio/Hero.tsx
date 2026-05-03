@@ -8,11 +8,10 @@ const Hero = () => (
       <h1 className="display text-5xl sm:text-6xl md:text-8xl font-bold leading-[0.95] tracking-tight">
         Rohan Fozdar.
         <br />
-        <span className="text-foreground/50">Designer who ships.</span>
+        <span className="text-foreground/50">Everything Engineer.</span>
       </h1>
       <p className="mt-8 max-w-2xl text-lg md:text-xl text-foreground/70 leading-relaxed">
-        I build small, opinionated products that solve problems I actually have —
-        then I sweat every pixel until they feel inevitable.
+        I ship to solve problems.
       </p>
       <div className="mt-10 flex flex-wrap gap-3">
         <a href="#work" className="glass-strong rounded-full px-6 py-3 text-sm font-medium hover:scale-[1.02] active:scale-100 transition-transform">
