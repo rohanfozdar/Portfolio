@@ -9,7 +9,6 @@ export type Project = {
   year: string;
   cover: string;
   problem: string;
-  insight: string;
   build: string;
   result: string;
   link?: { label: string; href: string };
@@ -18,67 +17,60 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "session-tracker",
-    title: "Belay",
-    year: "2025",
+    id: "ercot-forecaster",
+    title: "ERCOT Electricity Forecaster",
+    year: "2026",
     cover: project1,
-    tags: ["Product Design", "iOS", "Swift"],
+    tags: ["Forecasting", "Energy", "ML"],
     problem:
-      "I kept forgetting which routes I'd sent at the climbing gym, and existing trackers felt like data-entry chores.",
-    insight:
-      "Climbers don't want a spreadsheet — they want a journal. A session is an emotional arc, not a list of grades.",
+      "A tornado hit my university twice in one week, knocking out power across half the campus for days. For the first time I saw the engine production plant outside campus go dark — not obnoxiously lit up like usual. It hit me that electricity fluctuations like this must cost manufacturers serious money in regions where they happen often.",
     build:
-      "A one-tap session logger with a beautiful timeline. Routes, attempts, and notes captured in seconds; weekly recaps surface patterns.",
+      "An ERCOT electricity spike-rate forecaster that predicts price and load volatility windows so industrial users can hedge or shift load.\n\n• [bullet points regarding technicals to be added]",
     result:
-      "Used by 200+ climbers in early beta. Featured in r/climbharder. People log 3× more sessions vs. their previous tool.",
-    link: { label: "View case study", href: "#" },
+      "Currently in testing — set to conclude June 2026.",
+    link: { label: "View project", href: "#" },
   },
   {
-    id: "study-os",
-    title: "Marginal",
-    year: "2024",
+    id: "promotion-gauger",
+    title: "Promotion Gauger",
+    year: "2025",
     cover: project2,
-    tags: ["Web", "AI", "React"],
+    tags: ["NLP", "Sentiment", "RoBERTa"],
     problem:
-      "Studying for finals meant juggling six tabs, three PDFs, and a notebook — and still missing the connections.",
-    insight:
-      "Notes are most valuable at the moment of confusion, not after. The reading surface itself should be the workspace.",
+      "For case prep at the Knox Consulting Club, too much time was being spent summarizing the advertisement impact of specific promotions. The senate had cut our budget, leaving us understaffed.",
     build:
-      "A reader that lets you margin-annotate any PDF or article, and an AI that quietly stitches your notes into a study graph.",
+      "A sentiment intelligence tool that takes any promotion as a keyword and pulls live data from Google News and Amazon Reviews, auto-syncing every 30 minutes.\n\nBuilt on a RoBERTa transformer fine-tuned on retail language, every source is scored across three axes: price perception, brand sentiment, and urgency.",
     result:
-      "Saved my own GPA. 1.2k weekly active students at launch; average session 38 minutes.",
-    link: { label: "Try it", href: "#" },
+      "Any club member can type a promotion name and get evidence-backed sentiment scores, with source links and axis breakdowns ready to drop directly into case analysis.",
+    link: { label: "View project", href: "#" },
   },
   {
-    id: "kitchen-os",
-    title: "Mise",
+    id: "autosearch",
+    title: "AutoSearch",
     year: "2024",
     cover: project3,
-    tags: ["Mobile", "Design Systems"],
+    tags: ["RAG", "FAISS", "LLM"],
     problem:
-      "Cooking from a recipe with greasy hands and a phone that kept locking was, frankly, miserable.",
-    insight:
-      "Recipes aren't documents — they're choreography. The interface should follow your hands, not the other way around.",
+      "I was frustrated with looking for jobs on LinkedIn. After 400 applications and only 20 follow-throughs, I decided I needed a platform that ranked listings by ATS scores.",
     build:
-      "A voice-first cooking companion with step-locked timers, ingredient-aware swaps, and a hands-free mode that actually works.",
+      "Shipped an end-to-end job search platform with a REST API ingestion pipeline, RAG-style semantic scoring using FAISS vector search and sentence-transformers, and an ATS scoring microservice to surface better-fit roles.\n\nEngineered an LLM-based ranking engine using PyMuPDF resume parsing, overlapping text chunking, cosine similarity matching against a FAISS vector store, and NLP-based job classification across 50+ listings per query.",
     result:
-      "Hit #14 in Food & Drink on the App Store. 4.8★ across 600+ reviews.",
-    link: { label: "App Store", href: "#" },
+      "A fully functioning job search platform that pulls postings through API and ranks them according to resume match.",
+    link: { label: "View project", href: "#" },
   },
   {
-    id: "calm-inbox",
-    title: "Quiet",
+    id: "binomial-options-pricer",
+    title: "Binomial Options Pricer",
     year: "2023",
     cover: project4,
-    tags: ["Productivity", "macOS"],
+    tags: ["Quant", "Finance", "Visualization"],
     problem:
-      "My inbox was the loudest room in my life — and the one I had the least control over.",
-    insight:
-      "The problem isn't volume; it's that everything is presented as equally urgent. Triage should be the default state.",
+      "I wanted to help my tutees understand how Implied Volatility changes can be interpreted in the market.",
     build:
-      "A minimal email client that batches, hides, and surfaces. Three modes: Now, Later, Never. That's it.",
+      "An options pricing tool using Binomial branching with live data from YFinance for comparison, providing valuations across all possible strikes and expirations for greater accuracy.\n\nIntegrated automated risk-free rate calculations by pulling US Treasury yields based on expiration to improve accuracy over traditional measures.\n\nImplemented a 3D IV surface visualization allowing users to analyze trends across different strikes and expirations, with a module explaining how shifts in IV trends reflect market sentiment and supply & demand imbalances.",
     result:
-      "Cut my own inbox time by 70%. Sold the prototype concept to a Series-B productivity startup.",
+      "Increased enrollment in Financial Mathematics (Math 227) by 30%. Received the Richter Grant funding from the Department of Mathematics at Knox.",
+    link: { label: "View project", href: "#" },
   },
 ];
 
