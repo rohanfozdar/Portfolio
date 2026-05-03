@@ -8,7 +8,7 @@ const Section = ({ label, title, body }: { label: string; title: string; body: s
   <div className="glass rounded-2xl p-6 md:p-7">
     <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground/50 mb-2">{label}</p>
     <h4 className="display text-xl md:text-2xl font-semibold tracking-tight mb-3">{title}</h4>
-    <p className="text-foreground/75 leading-relaxed">{body}</p>
+    <div className="text-foreground/75 leading-relaxed whitespace-pre-line">{body}</div>
   </div>
 );
 
@@ -33,9 +33,8 @@ const CaseStudy = ({ project, onClose }: Props) => (
               <h2 className="display text-3xl md:text-5xl font-bold tracking-tight">{project.title}</h2>
             </div>
             <Section label="01 — The Problem" title="Where it hurt" body={project.problem} />
-            <Section label="02 — The Insight" title="What clicked" body={project.insight} />
-            <Section label="03 — What I Built" title="The response" body={project.build} />
-            <Section label="04 — The Result" title="What happened" body={project.result} />
+            <Section label="02 — What I Built" title="The response" body={project.build} />
+            <Section label="03 — What Happened" title="The outcome" body={project.result} />
             {project.link && (
               <a
                 href={project.link.href}
