@@ -31,7 +31,7 @@ export const projects: Project[] = [
     link: { label: "View project", href: "#" },
   },
   {
-    id: "promotion-gauger-new",
+    id: "promotion-gauger",
     title: "Promotion Gauger",
     year: "2026",
     cover: project3,
