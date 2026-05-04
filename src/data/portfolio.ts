@@ -61,7 +61,7 @@ export const projects: Project[] = [
   {
     id: "binomial-options-pricer",
     title: "Binomial Options Pricer",
-    year: "2023",
+    year: "2025",
     cover: project4,
     tags: ["Quant", "Finance", "Visualization"],
     problem:
