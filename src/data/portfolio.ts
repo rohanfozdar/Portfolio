@@ -94,7 +94,7 @@ export const roles: Role[] = [
   {
     date: "Mar 2024 — Present",
     title: "Mathematics Teaching Assistant",
-    org: "Knox College — Department of Mathematics",
+    org: "Knox College Department of Mathematics",
     bullets: [
       "Developed class material and led recitation sessions for Calculus I–III, Discrete Math, Linear Algebra, Foundations of Analysis, Methods of Proof, Differential Equations, Mathematical Statistics, and Financial Math.",
       "Graded homework and exams and collaborated with other TAs to host tutoring sessions for the department.",
