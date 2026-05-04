@@ -33,23 +33,9 @@ export const projects: Project[] = [
   {
     id: "promotion-gauger",
     title: "Promotion Gauger",
-    year: "2025",
-    cover: project2,
-    tags: ["NLP", "Sentiment", "RoBERTa"],
-    problem:
-      "For case prep at the Knox Consulting Club, too much time was being spent summarizing the advertisement impact of specific promotions. The senate had cut our budget, leaving us understaffed.",
-    build:
-      "A sentiment intelligence tool that takes any promotion as a keyword and pulls live data from Google News and Amazon Reviews, auto-syncing every 30 minutes.\n\nBuilt on a RoBERTa transformer fine-tuned on retail language, every source is scored across three axes: price perception, brand sentiment, and urgency.",
-    result:
-      "Any club member can type a promotion name and get evidence-backed sentiment scores, with source links and axis breakdowns ready to drop directly into case analysis.",
-    link: { label: "View project", href: "#" },
-  },
-  {
-    id: "autosearch",
-    title: "AutoSearch",
-    year: "2024",
+    year: "2026",
     cover: project3,
-    tags: ["RAG", "FAISS", "LLM"],
+    tags: ["NLP", "Sentiment", "RoBERTa"],
     problem:
       "I was frustrated with looking for jobs on LinkedIn. After 400 applications and only 20 follow-throughs, I decided I needed a platform that ranked listings by ATS scores.",
     build:
