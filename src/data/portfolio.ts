@@ -45,11 +45,11 @@ export const projects: Project[] = [
     link: { label: "View project", href: "#" },
   },
   {
-    id: "autosearch",
-    title: "AutoSearch",
-    year: "2024",
+    id: "promotion-gauger-new",
+    title: "Promotion Gauger",
+    year: "2026",
     cover: project3,
-    tags: ["RAG", "FAISS", "LLM"],
+    tags: ["NLP", "Sentiment", "RoBERTa"],
     problem:
       "I was frustrated with looking for jobs on LinkedIn. After 400 applications and only 20 follow-throughs, I decided I needed a platform that ranked listings by ATS scores.",
     build:
