@@ -11,7 +11,7 @@ const Work = () => {
         <div className="flex items-end justify-between mb-10 md:mb-14">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-foreground/50 mb-3">Selected work</p>
-            <h2 className="display text-4xl md:text-6xl font-bold tracking-tight">Problems, then products.</h2>
+            <h2 className="display text-4xl md:text-6xl font-bold tracking-tight">Things I've Built</h2>
           </div>
           <p className="hidden md:block max-w-xs text-sm text-foreground/60">
             Each project starts with a real friction in my own life. Tap one to read the arc.
