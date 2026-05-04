@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     id: "promotion-gauger",
     title: "Promotion Gauger",
-    year: "2025",
+    year: "2026",
     cover: project2,
     tags: ["NLP", "Sentiment", "RoBERTa"],
     problem:
