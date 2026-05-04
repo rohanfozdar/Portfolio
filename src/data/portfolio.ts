@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     id: "autosearch",
     title: "AutoSearch",
-    year: "2025",
+    year: "2026",
     cover: project3,
     tags: ["Quant", "Finance", "Visualization"],
     problem:
