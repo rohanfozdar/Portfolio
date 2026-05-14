@@ -49,7 +49,7 @@ export const projects: Project[] = [
     title: "AutoSearch",
     year: "2026",
     cover: project3,
-    tags: ["Quant", "Finance", "Visualization"],
+    tags: ["Vector Brain", "FAISS", "Cosine similarity"],
     problem:
       "I was frustrated with looking for jobs on LinkedIn. After 400 applications and only 20 follow-throughs, I decided I needed a platform that ranked listings by ATS scores.",
     build:
