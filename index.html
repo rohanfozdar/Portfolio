@@ -3,31 +3,215 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rohan Fozdar — Designer &amp; Builder</title>
-    <meta name="description" content="Rohan Fozdar&#39;s portfolio: selected projects, story-driven case studies, and resume.">
+    <title>Rohan Fozdar</title>
+    <meta
+      name="description"
+      content="Rohan Fozdar is a junior AI engineer at Frontline Performance Group. This page has a short bio, work, and selected projects."
+    />
     <meta name="author" content="Rohan Fozdar" />
-    <link rel="canonical" href="https://rohanfozdar.com/" />
-
+    <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet" />
-
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b2ef519c-5cd4-400c-867a-fd236730c850/id-preview-56168fea--33c56e9c-ed24-4780-8e46-fc65f8e28798.lovable.app-1777844997617.png">
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b2ef519c-5cd4-400c-867a-fd236730c850/id-preview-56168fea--33c56e9c-ed24-4780-8e46-fc65f8e28798.lovable.app-1777844997617.png">
-    <meta property="og:title" content="Rohan Fozdar — Designer &amp; Builder">
-  <meta name="twitter:title" content="Rohan Fozdar — Designer &amp; Builder">
-  <meta property="og:description" content="Rohan Fozdar&#39;s portfolio: selected projects, story-driven case studies, and resume.">
-  <meta name="twitter:description" content="Rohan Fozdar&#39;s portfolio: selected projects, story-driven case studies, and resume.">
-</head>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <canvas id="gol-bg" aria-hidden="true"></canvas>
+
+    <main class="content" id="main">
+      <div class="middle-container">
+        <article class="page">
+          <div class="top-right">
+            <a class="btn" href="%BASE_URL%resume.pdf">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M6 2h8l6 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5L13 3.5zM8 13h8v1.5H8V13zm0 3.5h8V18H8v-1.5z"
+                />
+              </svg>
+              CV
+            </a>
+          </div>
+
+          <header class="hero">
+            <!-- Swap photo.svg for photo.jpg after adding public/photo.jpg -->
+            <img class="hero-photo" src="%BASE_URL%photo.svg" alt="Rohan Fozdar" width="152" height="152" />
+            <div class="hero-text">
+              <h1 class="hero-name">Rohan Fozdar</h1>
+              <p class="eyebrow hero-eyebrow">Jr AI Engineer at Frontline Performance Group</p>
+              <div class="hero-links">
+                <a class="icon" href="https://github.com/rohanfozdar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.2 3.44 9.61 8.21 11.16.6.11.82-.25.82-.56 0-.28-.01-1.02-.02-2C5.67 21.59 4.97 19.5 4.97 19.5c-.55-1.36-1.34-1.72-1.34-1.72-1.09-.73.08-.72.08-.72 1.2.08 1.84 1.21 1.84 1.21 1.07 1.79 2.81 1.27 3.5.97.11-.76.42-1.27.76-1.56-2.66-.29-5.46-1.3-5.46-5.78 0-1.28.47-2.32 1.23-3.14-.12-.29-.53-1.48.12-3.08 0 0 1-.31 3.3 1.2a11.6 11.6 0 0 1 6 0c2.3-1.51 3.3-1.2 3.3-1.2.65 1.6.24 2.79.12 3.08.77.82 1.23 1.86 1.23 3.14 0 4.49-2.81 5.48-5.48 5.77.43.36.82 1.08.82 2.18 0 1.58-.02 2.85-.02 3.24 0 .31.22.68.83.56C20.57 21.9 24 17.49 24 12.29 24 5.78 18.63.5 12 .5z"
+                    />
+                  </svg>
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/rohan-fozdar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"
+                    />
+                  </svg>
+                </a>
+                <a class="icon" href="https://x.com/fozdar_rohan" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a class="icon" href="mailto:rohan.fozdar@gmail.com" aria-label="Email">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      fill="currentColor"
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </header>
+
+          <section class="section">
+            <p class="eyebrow">About</p>
+            <p>
+              I'm a junior AI engineer at
+              <a href="https://frontlinepg.com/" target="_blank" rel="noopener noreferrer">Frontline Performance Group</a>,
+              where I build AI systems for hospitality brands including Marriott, Hilton, Jumeirah, and Hyatt.
+              I studied pure mathematics and data science at
+              <a href="https://www.knox.edu/" target="_blank" rel="noopener noreferrer">Knox College</a>,
+              and I'm also founding a stealth startup.
+            </p>
+            <p>
+              I'm based in Chicago, and I'm interested in AI and machine learning architectures and how they get implemented.
+              If you'd like to get in touch, use one of the links above.
+            </p>
+          </section>
+
+          <section class="section">
+            <p class="eyebrow">Work</p>
+
+            <article class="role">
+              <h3>Junior AI Engineer</h3>
+              <p class="role-meta">Frontline Performance Group · current</p>
+              <p>
+                Building AI systems used by Marriott, Hilton, Jumeirah, Hyatt, and other hospitality brands.
+              </p>
+            </article>
+
+            <article class="role">
+              <h3>Quantitative Analytics Intern</h3>
+              <p class="role-meta">Monarch Networth Capital · Nov 2025 – Jan 2026</p>
+              <p>
+                Designed a momentum trading strategy on NSE ETFs using time-trend derivatives. The backtest
+                returned 45% with a 3.43 Sharpe on BankNifty over one year. A moving-average strategy, comparing
+                the current market price with the moving average, returned 3100% with a 2.86 Sharpe on Nifty over 25 years.
+              </p>
+            </article>
+
+            <article class="role">
+              <h3>Mathematics Teaching Assistant</h3>
+              <p class="role-meta">Knox College Department of Mathematics · Mar 2024 – present</p>
+              <p>
+                Wrote class material and led recitations for Calculus I–III, discrete math, linear algebra,
+                foundations of analysis, methods of proof, differential equations, mathematical statistics, and
+                financial math. Graded homework and exams, and hosted department tutoring sessions with the other TAs.
+              </p>
+            </article>
+
+            <article class="role">
+              <h3>AI Intern</h3>
+              <p class="role-meta">MeasureOne · Jun 2023 – Aug 2023</p>
+              <p>
+                Fine-tuned early ChatGPT models on prompt–completion pairs so they could match client data tables
+                and generate parser code. Built a preprocessing pipeline that normalized heterogeneous transcript
+                formats and cut manual engineering workload by 25%.
+              </p>
+            </article>
+          </section>
+
+          <section class="section" id="projects">
+            <p class="eyebrow">Projects</p>
+            <p class="muted papers-note">
+              Selected work. More lives on
+              <a href="https://github.com/rohanfozdar" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            </p>
+            <ol class="pub-list">
+              <li class="pub">
+                <span class="pub-num">01</span>
+                <div class="pub-main">
+                  <h3 class="pub-title">ERCOT Electricity Forecaster</h3>
+                  <p class="pub-meta">
+                    XGBoost spot-price model trained on nine data sources from 2016–2024. Spike-rate accuracy of
+                    58.8%, against 28.9% for the day-ahead market, with grid-stress signals up to 144 hours ahead.
+                    An extension using IBM Research's Tiny Time Mixers was in testing, set to conclude June 2026.
+                  </p>
+                  <p class="pub-links">
+                    <a href="https://github.com/rohanfozdar/Electricity-Price-Forecaster" target="_blank" rel="noopener noreferrer">code</a>
+                  </p>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="pub-num">02</span>
+                <div class="pub-main">
+                  <h3 class="pub-title">Promotion Gauger</h3>
+                  <p class="pub-meta">
+                    Sentiment tool for the Knox Consulting Club. It pulls Google News and Amazon reviews for a
+                    promotion and scores each source with a retail-tuned RoBERTa model on price perception, brand
+                    sentiment, and urgency.
+                  </p>
+                  <p class="pub-links">
+                    <a href="https://promotion-gauger-gpizk83vr88fbfv8ijlaho.streamlit.app/" target="_blank" rel="noopener noreferrer">demo</a>
+                    <a href="https://github.com/rohanfozdar/promotion-gauger" target="_blank" rel="noopener noreferrer">code</a>
+                  </p>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="pub-num">03</span>
+                <div class="pub-main">
+                  <h3 class="pub-title">AutoSearch</h3>
+                  <p class="pub-meta">
+                    Job-search platform that ingests listings, scores them against a résumé with FAISS and
+                    sentence-transformers, and ranks them with an ATS microservice.
+                  </p>
+                  <p class="pub-links">
+                    <a href="https://job-finder-pi-ten.vercel.app" target="_blank" rel="noopener noreferrer">demo</a>
+                    <a href="https://github.com/rohanfozdar/job-finder" target="_blank" rel="noopener noreferrer">code</a>
+                  </p>
+                </div>
+              </li>
+              <li class="pub">
+                <span class="pub-num">04</span>
+                <div class="pub-main">
+                  <h3 class="pub-title">Binomial Options Pricer</h3>
+                  <p class="pub-meta">
+                    Binomial pricer with live Yahoo Finance data, Treasury yields as the risk-free rate, and a 3D
+                    implied-volatility surface, built to show how implied volatility moves with the market.
+                    Increased enrollment in Financial Mathematics (Math 227) by 30%, and received Richter Grant
+                    funding from the Knox Department of Mathematics.
+                  </p>
+                  <p class="pub-links">
+                    <a href="https://rohanfozdar.github.io/options-pricer/" target="_blank" rel="noopener noreferrer">website</a>
+                    <a href="https://github.com/rohanfozdar/options-pricer" target="_blank" rel="noopener noreferrer">code</a>
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <footer class="page-end">
+            <div class="page-divider"><span class="lotus-mark"></span></div>
+            <small>&#169; 2026 Rohan Fozdar</small>
+          </footer>
+        </article>
+      </div>
+    </main>
   </body>
 </html>
